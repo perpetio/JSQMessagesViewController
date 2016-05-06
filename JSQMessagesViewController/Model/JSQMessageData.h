@@ -97,4 +97,8 @@
  */
 - (id<JSQMessageMediaData>)media;
 
+@optional
+
+- (NSAttributedString *)attributedText;
+
 @end
