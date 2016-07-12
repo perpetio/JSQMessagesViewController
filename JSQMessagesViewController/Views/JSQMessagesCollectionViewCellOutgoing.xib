@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -24,23 +24,13 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bubble top label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p52-YN-yLu" userLabel="Bubble top label" customClass="JSQMessagesLabel">
-                        <rect key="frame" x="0.0" y="20" width="320" height="20"/>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="8TB-va-f8L"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zh-vR-QJW" userLabel="Bubble container">
-                        <rect key="frame" x="40" y="40" width="244" height="94"/>
+                        <rect key="frame" x="30" y="40" width="244" height="94"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2qm-c6-OZf" userLabel="Bubble Image View">
                                 <rect key="frame" x="0.0" y="0.0" width="244" height="94"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vLY-aM-0Dr" customClass="JSQMessagesCellTextView">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vLY-aM-0Dr" customClass="JSQMessagesCellTextView">
                                 <rect key="frame" x="0.0" y="0.0" width="238" height="94"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -60,20 +50,20 @@
                             <constraint firstAttribute="bottom" secondItem="2qm-c6-OZf" secondAttribute="bottom" id="lts-Ve-wSh"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X89-B1-aAd" userLabel="Avatar container">
-                        <rect key="frame" x="286" y="100" width="34" height="34"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X89-B1-aAd" userLabel="Avatar container">
+                        <rect key="frame" x="270" y="46" width="40" height="40"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9b-D9-Q7W" userLabel="Avatar Image View">
-                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="y9b-D9-Q7W" userLabel="Avatar Image View">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="y9b-D9-Q7W" secondAttribute="bottom" id="7SX-4t-GAr"/>
-                            <constraint firstAttribute="width" constant="34" id="Pkm-tW-k4z"/>
+                            <constraint firstAttribute="width" constant="40" id="Pkm-tW-k4z"/>
                             <constraint firstItem="y9b-D9-Q7W" firstAttribute="leading" secondItem="X89-B1-aAd" secondAttribute="leading" id="Pya-tL-FjE"/>
                             <constraint firstItem="y9b-D9-Q7W" firstAttribute="top" secondItem="X89-B1-aAd" secondAttribute="top" id="e5w-hn-mre"/>
-                            <constraint firstAttribute="height" constant="34" id="tgw-aN-JJu"/>
+                            <constraint firstAttribute="height" constant="40" id="tgw-aN-JJu"/>
                             <constraint firstAttribute="trailing" secondItem="y9b-D9-Q7W" secondAttribute="trailing" id="w9X-3u-BNY"/>
                         </constraints>
                     </view>
@@ -87,6 +77,16 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="bubble top label" textAlignment="right" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p52-YN-yLu" userLabel="Bubble top label" customClass="JSQMessagesLabel">
+                        <rect key="frame" x="176" y="20" width="98" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="8TB-va-f8L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.21960784310000001" green="0.6705882353" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -95,16 +95,15 @@
                 <constraint firstItem="2zh-vR-QJW" firstAttribute="top" secondItem="p52-YN-yLu" secondAttribute="bottom" id="3Wx-g0-fTc"/>
                 <constraint firstAttribute="trailing" secondItem="jxM-YD-sVG" secondAttribute="trailing" id="AwY-g7-f1T"/>
                 <constraint firstItem="jxM-YD-sVG" firstAttribute="top" secondItem="23f-xH-rkY" secondAttribute="top" id="HYT-Tw-whz"/>
-                <constraint firstAttribute="trailing" secondItem="X89-B1-aAd" secondAttribute="trailing" id="KLt-Ix-wDa"/>
+                <constraint firstAttribute="trailing" secondItem="X89-B1-aAd" secondAttribute="trailing" constant="10" id="KLt-Ix-wDa"/>
                 <constraint firstItem="7Uc-dI-YDD" firstAttribute="top" secondItem="2zh-vR-QJW" secondAttribute="bottom" id="Ngq-ew-t2K"/>
+                <constraint firstItem="p52-YN-yLu" firstAttribute="top" secondItem="jxM-YD-sVG" secondAttribute="bottom" id="ZBX-ye-Q68"/>
+                <constraint firstItem="X89-B1-aAd" firstAttribute="top" secondItem="p52-YN-yLu" secondAttribute="bottom" constant="6" id="elk-YZ-s2g"/>
                 <constraint firstItem="7Uc-dI-YDD" firstAttribute="leading" secondItem="23f-xH-rkY" secondAttribute="leading" id="fiS-g3-X16"/>
                 <constraint firstAttribute="bottom" secondItem="7Uc-dI-YDD" secondAttribute="bottom" id="gXo-9b-b1W"/>
-                <constraint firstAttribute="trailing" secondItem="p52-YN-yLu" secondAttribute="trailing" id="gen-N0-uZj"/>
-                <constraint firstItem="p52-YN-yLu" firstAttribute="top" secondItem="jxM-YD-sVG" secondAttribute="bottom" id="jBD-JV-AWk"/>
-                <constraint firstItem="X89-B1-aAd" firstAttribute="top" secondItem="p52-YN-yLu" secondAttribute="bottom" id="lcu-Nj-BRV"/>
+                <constraint firstItem="p52-YN-yLu" firstAttribute="trailing" secondItem="2zh-vR-QJW" secondAttribute="trailing" id="hU8-R0-1Cq"/>
                 <constraint firstItem="jxM-YD-sVG" firstAttribute="leading" secondItem="23f-xH-rkY" secondAttribute="leading" id="qeB-G5-1Wq"/>
-                <constraint firstItem="p52-YN-yLu" firstAttribute="leading" secondItem="23f-xH-rkY" secondAttribute="leading" id="tTj-Mp-0va"/>
-                <constraint firstItem="X89-B1-aAd" firstAttribute="leading" secondItem="2zh-vR-QJW" secondAttribute="trailing" constant="2" id="vMz-Yi-B0w"/>
+                <constraint firstItem="X89-B1-aAd" firstAttribute="leading" secondItem="2zh-vR-QJW" secondAttribute="trailing" constant="-4" id="vMz-Yi-B0w"/>
             </constraints>
             <size key="customSize" width="317" height="245"/>
             <connections>
